@@ -1,7 +1,5 @@
-
-## SET UP INSTRUCTIONS
-### Project demo video link
-Open ganache and select quick start ethereum.
+#### Setting up environment
+Open ganache and select quick start ethereum or Open ganache and select workspace ethereum for permanent set of ethereum.
 
 Open your browser and configure metamask. Create a wallet and store your```Secret Recovery Phrase``` in a safe place.
 
@@ -19,9 +17,9 @@ Open your browser and configure metamask. Create a wallet and store your```Secre
 4. Paste the private key copied from ganache and click import.
 
 #### Cloning the project
+download the zip file
 
-
-cd blockchain-voting-system
+cd voteZenith
 
 npm i
 
@@ -34,7 +32,3 @@ truffle migrate --reset (Every time you open Ganache)
 npm start
 
 The project will open in the browser and metamask will ask you to select an account. Select the account we had imported earlier.
-
-
-### danson added a new code 
-
