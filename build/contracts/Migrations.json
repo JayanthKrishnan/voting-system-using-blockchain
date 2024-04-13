@@ -70,7 +70,7 @@
   "sourceMap": "66:517:1:-;;;229:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;229:56:1;268:10;260:5;;:18;;;;;;;;;;;;;;;;;;66:517;;;;;;",
   "deployedSourceMap": "66:517:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;406:175;;8:9:-1;5:2;;;30:1;27;20:12;5:2;406:175:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;406:175:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;118:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;118:36:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;92:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:20:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;291:109;;8:9:-1;5:2;;;30:1;27;20:12;5:2;291:109:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;291:109:1;;;;;;;;;;;;;;;;;:::i;:::-;;406:175;211:5;;;;;;;;;;;197:19;;:10;:19;;;193:26;;;472:19;505:11;472:45;;527:8;:21;;;549:24;;527:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;527:47:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;527:47:1;;;;218:1;193:26;406:175;:::o;118:36::-;;;;:::o;92:20::-;;;;;;;;;;;;;:::o;291:109::-;211:5;;;;;;;;;;;197:19;;:10;:19;;;193:26;;;384:9;357:24;:36;;;;193:26;291:109;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n    address public owner;\n    uint public last_completed_migration;\n\n    modifier restricted() {\n        if (msg.sender == owner) _;\n    }\n\n constructor() public {\n        owner = msg.sender;\n    }\n\n    function setCompleted(uint completed) public restricted {\n        last_completed_migration = completed;\n    }\n\n    function upgrade(address new_address) public restricted {\n        Migrations upgraded = Migrations(new_address);\n        upgraded.setCompleted(last_completed_migration);\n    }\n}\n",
-  "sourcePath": "C:\\voting-system\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\voteZenith\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1471,12 +1471,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xde9d1D4316F754A9FDEC75D18082443339A5Dbe5",
-      "transactionHash": "0x2b0fae3c775110eaf9e4e3303022ecc55bb9651a011a7f5cbfa9fc72b7be8964"
+      "address": "0x0017148D924d45f8d96d8f2e93c152739d63ffb3",
+      "transactionHash": "0x02b6ffbdbf5df6e9cdd30d2025a1604ce22076f3ce50e10cce93d908767731a5"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-15T06:03:30.113Z",
+  "updatedAt": "2024-04-08T06:40:24.709Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
